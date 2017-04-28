@@ -1,0 +1,13 @@
+<table border="2" bordercolor="stain">
+  <tr>
+    <th>Name</th>
+  </tr>
+
+  <% @figures.each do |figure| %>
+
+  <tr>
+    <td><a href='/figures/<%= figure.id %>'><%= figure.name %></a></td>
+  </tr>
+
+  <% end %>
+</table>
